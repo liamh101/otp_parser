@@ -1,0 +1,9 @@
+[package]
+name = "otp_parser"
+description = "Parse 2FA secrets and returns it's current OTP"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.26", features = ["derive"] }
+libotp = { git = "https://github.com/liamh101/otp.git", branch = "master" }
